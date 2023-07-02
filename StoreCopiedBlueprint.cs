@@ -1,10 +1,11 @@
 ﻿using Kitchen;
+using KitchenMods;
 using Unity.Entities;
 
 namespace KitchenIMessedUp
 {
     [UpdateBefore(typeof(PickUpAndDropAppliance))]
-    public class StoreCopiedBlueprint : ApplianceInteractionSystem
+    public class StoreCopiedBlueprint : ApplianceInteractionSystem, IModSystem
     {
         private CItemHolder Holder;
 
